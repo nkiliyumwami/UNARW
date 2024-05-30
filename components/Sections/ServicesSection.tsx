@@ -69,8 +69,8 @@ export const ServicesSection = () => {
 
           <div className="mt-10">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((service) => (
-                <ServiceCard service={service} />
+              {services.map((service, index) => (
+                <ServiceCard key={index} service={service} />
               ))}
             </div>
           </div>
