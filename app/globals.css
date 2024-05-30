@@ -21,3 +21,9 @@
     text-wrap: balance;
   }
 }
+
+h2{
+    font-family: "Saira", sans-serif;
+    color: #18181b;
+    font-weight: bold;
+}
