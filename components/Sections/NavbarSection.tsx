@@ -9,9 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
-    const toggleMenu = () => {
-      console.log('Heyyy');
-      
+    const toggleMenu = () => {      
     setIsOpen(!isOpen)
   }
 
@@ -36,33 +34,33 @@ const Navbar = () => {
           : 'bg-transparent text-white'
       }`}
     >
-      <div className=" mx-auto py-2 px-[30px] flex items-center justify-between">
+      <div className=" mx-auto py-2 px-24 flex items-center justify-between">
         <div className="flex items-center">
           <Link className="flex-shrink-0" href="/">
             <Image
-              width={150}
+              width={180}
               height={50}
-              className={`md:w-[150px] w-[80px]`}
+              className={`md:w-[160px] w-[80px]`}
               src={logo}
               alt="UNA Rwanda"
             />
           </Link>
         </div>
-        <div className="hidden md:flex space-x-4 flex-grow justify-end items-center ">
-          <a href="/" className=" hover:text-[#4894DF]">
+        <div className="hidden md:flex space-x-8 flex-grow ml-20 justify-end items-center ">
+          <a href="/" className=" hover:text-[#4894DF] px-5">
             Home
           </a>
-          <a href="/" className=" hover:text-[#4894DF]">
+          <a href="/" className=" hover:text-[#4894DF] px-8">
             About Us
           </a>
-          <a href="#" className=" hover:text-[#4894DF]">
-            Services
+          <a href="#" className=" hover:text-[#4894DF] px-8">
+            Programs
           </a>
-          <a href="#" className=" hover:text-[#4894DF]">
-            Contact Us
+          <a href="#" className=" hover:text-[#4894DF] px-8">
+            Get Involved
           </a>
           <button className="bg-gradient-to-r from-purple-400 to-[#4894DF] text-white px-4 py-2 rounded-full">
-            Get Started
+            Contact Us
           </button>
         </div>
         <div className="md:hidden flex items-center z-20">
@@ -80,7 +78,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-white">
+        <div className="md:hidden bg-white text-black">
           <a href="#" className="block px-4 py-2  hover:text-[#4894DF]">
             Home
           </a>
@@ -88,13 +86,13 @@ const Navbar = () => {
             About Us
           </a>
           <a href="#" className="block px-4 py-2  hover:text-[#4894DF]">
-            Services
+            Programs
           </a>
           <a href="#" className="block px-4 py-2  hover:text-[#4894DF]">
-            Contact Us
+            Get Involved
           </a>
           <button className="block w-full text-left px-4 py-2 bg-gradient-to-r from-purple-400 to-[#4894DF] text-white rounded-md">
-            Get Started
+            Contact Us
           </button>
         </div>
       )}
