@@ -3,16 +3,17 @@ import React from 'react'
 
 export const ServiceCard = ({ service }: any) => {
   return (
-    <div className="px-[15px] mb-[10px] w-full md:w-1/3 flex items-center justify-center">
-      <div className="px-3 py-6 flex flex-col justify-center items-center rounded-lg border border-[#EAF3FF] bg-white mb-6 h-calc-100-minus-25 transition-all duration-200 ease-in-out text-black relative cursor-pointer shadow-[0px_4px_16px_rgba(0,0,0,0.06)]">
-        <div className="mb-3">
-          <Image src={service.icon} alt={service.title} />
-        </div>
-        <div className="mb-[10px] leading-7 text-[18px]"> {service.title}</div>
-        <div className="text-[14px] leading-6 text-center">
-          {service.description}
+    <div className="p-6 rounded-lg shadow-lg bg-white text-center">
+      <div className="flex justify-center items-center">
+        <div
+          className={`w-[70px] h-[70px]  flex items-center justify-center rounded-full p-2 ${service.bgColor}`}
+        >
+          {service.icon}
         </div>
       </div>
+
+      <h3 className="mt-4 text-xl font-semibold">{service.title}</h3>
+      <p className="mt-2 text-gray-600">{service.description}</p>
     </div>
   )
 }
