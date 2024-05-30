@@ -31,10 +31,12 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-20 transition-colors duration-300 pt-[15px] ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        isScrolled
+          ? 'bg-white shadow-md text-black'
+          : 'bg-transparent text-white'
       }`}
     >
-      <div className="container mx-auto py-2 px-[30px] flex items-center justify-between">
+      <div className=" mx-auto py-2 px-[30px] flex items-center justify-between">
         <div className="flex items-center">
           <Link className="flex-shrink-0" href="/">
             <Image
@@ -46,7 +48,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="hidden md:flex space-x-4 flex-grow justify-end items-center text-white">
+        <div className="hidden md:flex space-x-4 flex-grow justify-end items-center ">
           <a href="/" className=" hover:text-[#4894DF]">
             Home
           </a>
@@ -66,9 +68,13 @@ const Navbar = () => {
         <div className="md:hidden flex items-center z-20">
           <button onClick={toggleMenu}>
             {isOpen ? (
-              <XMarkIcon className="h-10 text-white" />
+              <XMarkIcon
+                className={`h-10 ${isScrolled ? 'text-black' : 'text-white'}`}
+              />
             ) : (
-              <Bars3Icon className="h-10 text-white" />
+              <Bars3Icon
+                className={`h-10 ${isScrolled ? 'text-black' : 'text-white'}`}
+              />
             )}
           </button>
         </div>
