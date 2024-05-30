@@ -1,5 +1,6 @@
 'use client'
 
+import { AboutSection } from "@/components/Sections/AboutSection";
 import HeroSection from "@/components/Sections/HeroSection";
 import Navbar from "@/components/Sections/NavbarSection";
 import { ServicesSection } from "@/components/Sections/ServicesSection";
@@ -10,6 +11,7 @@ export default function Home() {
     <main className="">
       <Navbar />
       <HeroSection />
+      <AboutSection/>
       <ServicesSection/>
     </main>
   );
