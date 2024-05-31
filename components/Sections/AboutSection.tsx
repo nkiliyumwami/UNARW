@@ -40,13 +40,13 @@ export const AboutSection = () => {
               <h2 className="mb-[15px] text-[50px] font-bold">Who We are</h2>
               <h4 className="text-[22px] mb-2 font-semibold">Our History</h4>
               <p className="leading-7 text-[15px] text-[#646464]">
-                We, the United Nations Association Rwanda, are unwaveringly
-                committed to being catalysts for transformative change,
-                dedicating ourselves tirelessly to tackling the most urgent
-                global issues. Our primary commitment lies in achieving the
-                Sustainable Development Goals (SDGs), with a strong focus on
+                We, the United Nations Association Rwanda (UNA-RW), are
+                unwaveringly committed to being catalysts for transformative
+                change, dedicating ourselves tirelessly to tackling the most
+                urgent global issues. Our primary commitment lies in achieving
+                the Sustainable Development Goals (SDGs), with a strong focus on
                 eradicating poverty, fostering peace, addressing climate change,
-                and safeguarding the environment, as we believe these are
+                and safeguarding the environment. We believe these are
                 fundamental pillars for a better world. In our pursuit of these
                 goals, we are equally dedicated to promoting diversity, equity,
                 and inclusion (DEI), recognizing that these values are essential
@@ -61,12 +61,16 @@ export const AboutSection = () => {
                 tangible reality. The United Nations Association Rwanda offers a
                 range of impactful programs aimed at fostering knowledge
                 dissemination, promoting human rights, and fostering peace and
-                conflict resolution
+                conflict resolution. UNA-RW is part of the global network of
+                UNAs, currently operating in more than 100 countries around the
+                world. The World Federation of United Nations Associations
+                (WFUNA) is an international organization that represents and
+                coordinates a membership of all UNAs.
               </p>
             </div>
           </div>
         </div>
-        <VisionMission/>
+        <VisionMission />
       </div>
     </div>
   )
