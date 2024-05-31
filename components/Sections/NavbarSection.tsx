@@ -54,7 +54,7 @@ const Navbar = () => {
             About Us
           </a>
           <a href="#" className=" hover:text-[#4894DF] px-8">
-            Programs
+            Our Programs
           </a>
           <a href="#" className=" hover:text-[#4894DF] px-8">
             Get Involved
