@@ -3,6 +3,7 @@ import React from 'react'
 import UNARW from '../../public/unarwanda16X16.png'
 import WFUNA from '../../public/wfna-logo.png'
 import SDGs from '../../public/SDGs.png'
+import VisionMission from './VisionMission'
 
 export const AboutSection = () => {
   return (
@@ -62,17 +63,10 @@ export const AboutSection = () => {
                 dissemination, promoting human rights, and fostering peace and
                 conflict resolution
               </p>
-              <h4 className="text-[22px] mb-2 font-semibold">Our Mission</h4>
-              <p className="leading-7 text-[15px] text-[#646464]">
-                Our mission is to actively champion and advocate for the aims
-                and ideals set forth by the United Nations. Through our
-                initiatives and collaborations, we aim to foster a global
-                environment where cooperation, understanding, and sustainable
-                development thrive
-              </p>
             </div>
           </div>
         </div>
+        <VisionMission/>
       </div>
     </div>
   )
