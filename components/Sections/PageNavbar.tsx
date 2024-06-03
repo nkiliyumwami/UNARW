@@ -6,13 +6,12 @@ import logo from '../../public/unarwanda16X16.png'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
 import { useRouter } from 'next/navigation'
 
-
-const Navbar = () => {
+const PageNavbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const navigate = useRouter()
 
-    const toggleMenu = () => {      
+  const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
 
@@ -31,11 +30,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-20 transition-colors duration-300 pt-[15px] ${
-        isScrolled
-          ? 'bg-white shadow-md text-black'
-          : 'bg-transparent text-white'
-      }`}
+      className={`fixed w-full z-20 transition-colors duration-300 pt-[15px] bg-white shadow-md text-black`}
     >
       <div className=" mx-auto py-2 px-3 md:px-24 flex items-center justify-between">
         <div className="flex items-center">
@@ -65,7 +60,7 @@ const Navbar = () => {
           <button
             className="bg-gradient-to-r from-purple-400 to-[#4894DF] text-white px-4 py-2 rounded-full"
             onClick={() => {
-              navigate.push('/')
+              navigate.push('/contact-us')
             }}
           >
             Contact Us
@@ -93,15 +88,21 @@ const Navbar = () => {
           <a href="/about-us" className="block px-4 py-2  hover:text-[#4894DF]">
             About Us
           </a>
-          <a href="/our-programs" className="block px-4 py-2  hover:text-[#4894DF]">
+          <a
+            href="/our-programs"
+            className="block px-4 py-2  hover:text-[#4894DF]"
+          >
             Our Programs
           </a>
-          <a href="/get-involved" className="block px-4 py-2  hover:text-[#4894DF]">
+          <a
+            href="/get-involved"
+            className="block px-4 py-2  hover:text-[#4894DF]"
+          >
             Get Involved
           </a>
           <button
             onClick={() => {
-              navigate.push('/')
+              navigate.push('/contact-us')
             }}
             className="block w-full text-left px-4 py-2 bg-gradient-to-r from-purple-400 to-[#4894DF] text-white rounded-md"
           >
@@ -113,4 +114,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default PageNavbar
