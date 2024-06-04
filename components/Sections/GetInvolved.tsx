@@ -1,5 +1,6 @@
 import { HeartIcon, UserIcon } from "@heroicons/react/16/solid"
 import { RiMailLine } from "react-icons/ri"
+import EmailSubscriptionPopup from "../ui/EmailSubscriptionPopup"
 
 const involvementOptions = [
   {
@@ -43,12 +44,16 @@ const GetInvolvedSection = () => {
               <p className="text-gray-600 text-center mb-4">
                 {option.description}
               </p>
-              <a
-                href={option.link}
-                className="text-indigo-600 hover:text-indigo-500 font-medium"
-              >
-                Learn More
-              </a>
+              {option.title === 'Donate' || option.title === 'Volunteer' ? (
+                <a
+                  href={option.link}
+                  className="text-indigo-600 hover:text-indigo-500 font-medium"
+                >
+                  Learn More
+                </a>
+              ) : (
+                <EmailSubscriptionPopup option={option.link} />
+              )}
             </div>
           ))}
         </div>
