@@ -8,19 +8,19 @@ const involvementOptions = [
     description:
       'Join our team of volunteers and make a difference in your community.',
     icon: UserIcon,
-    link: '/volunteer',
+    link: '#',
   },
   {
     title: 'Donate',
     description: 'Support our mission by making a donation.',
     icon: HeartIcon,
-    link: '/donate',
+    link: '#',
   },
   {
     title: 'Subscribe',
     description: 'Stay updated by subscribing to our newsletter.',
     icon: RiMailLine,
-    link: '/subscribe',
+    link: '#',
   },
 ]
 
