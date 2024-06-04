@@ -11,7 +11,6 @@ import { ServicesSection } from "@/components/Sections/ServicesSection";
 export default function Home() {
   return (
     <main className="">
-      <Navbar />
       <HeroSection />
       <AboutSection />
       <ServicesSection />

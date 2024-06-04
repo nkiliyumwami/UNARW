@@ -1,7 +1,7 @@
 import React from 'react'
-import serviceIcon from '../../public/Web-Development.svg'
-import { LightBulbIcon, TvIcon } from '@heroicons/react/16/solid'
 import { ServiceCard } from '../ui/ServiceCard'
+import { FaBalanceScale, FaFemale, FaGlobe, FaHandshake, FaInfoCircle } from 'react-icons/fa'
+import {  FaUsers ,FaSchool} from 'react-icons/fa6'
 
 export type service = {
   icon: any
@@ -10,48 +10,55 @@ export type service = {
 }
 
 export const ServicesSection = () => {
-  const services = [
+  const programs = [
     {
-      icon: <LightBulbIcon />,
-      title: 'Digital Marketing',
+      title: 'Information Training and Resource Centre',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-      bgColor: 'bg-yellow-500',
+        'Provides access to information, training, and resources to empower individuals and communities.',
+      bgColor: 'bg-blue-500',
+      icon: FaInfoCircle,
     },
     {
-      icon: <TvIcon />,
-      title: 'UI/UX Design Development',
+      title: "Human and People's Rights",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+        'Promotes and protects the fundamental rights and freedoms of individuals and communities.',
+      bgColor: 'bg-green-500',
+      icon:  FaBalanceScale,
+    },
+    {
+      title: 'Conflict Resolution and Peace',
+      description:
+        'Facilitates peaceful resolution of conflicts and promotes harmony within communities.',
       bgColor: 'bg-purple-500',
+      icon: FaHandshake,
     },
     {
-      icon: <LightBulbIcon />,
-      title: 'Business Consultancy',
+      title: 'Climate Change Programs',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-      bgColor: 'bg-teal-500',
+        'Addresses the challenges of climate change through awareness, mitigation, and adaptation initiatives.',
+      bgColor: 'bg-orange-500',
+      icon: FaGlobe,
     },
     {
-      icon: <LightBulbIcon />,
-      title: 'Business Consultancy',
+      title: 'Women Empowerment',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-      bgColor: 'bg-teal-500',
+        'Supports and empowers women through education, skills development, and advocacy for gender equality.',
+      bgColor: 'bg-pink-500',
+      icon: FaFemale,
     },
     {
-      icon: <TvIcon />,
-      title: 'UI/UX Design Development',
+      title: 'School-Net',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-      bgColor: 'bg-purple-500',
-    },
-    {
-      icon: <LightBulbIcon />,
-      title: 'Digital Marketing',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+        'Connects schools and educational institutions to enhance learning opportunities and collaboration.',
       bgColor: 'bg-yellow-500',
+      icon: FaSchool,
+    },
+    {
+      title: 'UN Association Elders League',
+      description:
+        'Engages and mobilizes elders to contribute their wisdom and experience to UN initiatives and programs.',
+      bgColor: 'bg-gray-500',
+      icon: FaUsers,
     },
   ]
     return (
@@ -69,8 +76,8 @@ export const ServicesSection = () => {
 
           <div className="mt-10">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((service, index) => (
-                <ServiceCard key={index} service={service} />
+              {programs.map((program, index) => (
+                <ServiceCard key={index} service={program} />
               ))}
             </div>
           </div>
