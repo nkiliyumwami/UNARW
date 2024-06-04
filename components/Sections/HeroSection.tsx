@@ -21,9 +21,9 @@ const HeroSection = () => {
             Sustainable Development Goals, foster diversity, equity, and
             inclusion, and pave the path towards a peaceful, prosperous
           </p>
-          <button className="bg-[#4894DF] text-white px-6 py-3 my-[15px] mx-[20px] rounded-md">
-            Contact us
-          </button>
+          <a href="/get-involved"><button className="bg-[#4894DF] text-white px-6 py-3 my-[15px] mx-[20px] rounded-md capitalize">
+            Get Involved
+          </button></a>
         </div>
       </div>
       <div className="absolute inset-x-0 bottom-0">
