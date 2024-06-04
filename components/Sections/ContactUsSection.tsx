@@ -4,7 +4,6 @@ import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa
 import { FiMail } from "react-icons/fi"
 import { HiLocationMarker } from "react-icons/hi"
 import logo from '../../public/unarwanda16X16.png'
-import { BiLocationPlus } from "react-icons/bi"
 
 
 const ContactUsSection = () => {
@@ -21,8 +20,7 @@ const ContactUsSection = () => {
               className="mb-4"
             />
             <p className="text-gray-600 mb-4 text-[15px]">
-              Enabling sustainable impact through strategic consulting for a
-              better future.
+              Promoting the Aims and Ideals of the United Nations.
             </p>
             <div className="flex space-x-4">
               <a href="/" className="text-gray-500 hover:text-gray-700">
@@ -48,13 +46,19 @@ const ContactUsSection = () => {
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-gray-800">
+                <a
+                  href="/about-us"
+                  className="text-gray-600 hover:text-gray-800"
+                >
                   About us
                 </a>
               </li>
               <li>
-                <a href="/" className="text-gray-600 hover:text-gray-800">
-                  Programs
+                <a
+                  href="/our-programs"
+                  className="text-gray-600 hover:text-gray-800"
+                >
+                  Our Programs
                 </a>
               </li>
             </ul>
@@ -78,8 +82,8 @@ const ContactUsSection = () => {
             <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
             <ul className="space-y-2">
               <li className="flex items-center text-gray-600">
-                <HiLocationMarker size={20} className="h-5 w-5 mr-2" /> KN 72 Street,
-                (WAKA TOWN) Kigali, RWANDA.
+                <HiLocationMarker size={20} className="h-5 w-5 mr-2" /> KN 72
+                Street, (WAKA TOWN) Kigali, RWANDA.
               </li>
               <li className="flex items-center text-gray-600">
                 <PhoneIcon className="h-5 w-5 mr-2" /> +250 788 832 640

@@ -4,13 +4,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../../public/unarwanda16X16.png'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
-import { useRouter } from 'next/navigation'
+import { useRouter,usePathname } from 'next/navigation'
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const navigate = useRouter()
+  const pathname = usePathname()
+  const isActive = (href: string) => {
+    return pathname === href
+  }
 
     const toggleMenu = () => {      
     setIsOpen(!isOpen)
@@ -31,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-20 transition-colors duration-300 pt-[15px] ${
+      className={`fixed w-full z-20 transition-colors duration-300 pt-[15px] text-[16px] ${
         isScrolled
           ? 'bg-white shadow-md text-black'
           : 'bg-transparent text-white'
@@ -50,16 +54,36 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden md:flex space-x-8 flex-grow ml-20 justify-end items-center ">
-          <a href="/" className=" hover:text-[#4894DF] px-5">
+          <a
+            href="/"
+            className={`hover:text-[#4894DF] px-5 font-semibold ${
+              isActive('/') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             Home
           </a>
-          <a href="/about-us" className=" hover:text-[#4894DF] px-8">
+          <a
+            href="/about-us"
+            className={`hover:text-[#4894DF] px-5 font-semibold ${
+              isActive('/about-us') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             About Us
           </a>
-          <a href="/our-programs" className=" hover:text-[#4894DF] px-8">
+          <a
+            href="/our-programs"
+            className={`hover:text-[#4894DF] px-5 font-semibold ${
+              isActive('/our-programs') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             Our Programs
           </a>
-          <a href="get-involved" className=" hover:text-[#4894DF] px-8">
+          <a
+            href="get-involved"
+            className={`hover:text-[#4894DF] px-5 font-semibold ${
+              isActive('/get-involved') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             Get Involved
           </a>
           <button
@@ -87,16 +111,36 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden bg-white text-black">
-          <a href="/" className="block px-4 py-2  hover:text-[#4894DF]">
+          <a
+            href="/"
+            className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
+              isActive('/') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             Home
           </a>
-          <a href="/about-us" className="block px-4 py-2  hover:text-[#4894DF]">
+          <a
+            href="/about-us"
+            className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
+              isActive('/about-us') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             About Us
           </a>
-          <a href="/our-programs" className="block px-4 py-2  hover:text-[#4894DF]">
+          <a
+            href="/our-programs"
+            className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
+              isActive('/our-programs') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             Our Programs
           </a>
-          <a href="/get-involved" className="block px-4 py-2  hover:text-[#4894DF]">
+          <a
+            href="/get-involved"
+            className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
+              isActive('/get-involved') ? 'text-[#4894DF]' : ''
+            }`}
+          >
             Get Involved
           </a>
           <button

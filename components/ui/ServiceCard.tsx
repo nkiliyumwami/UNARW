@@ -8,7 +8,7 @@ export const ServiceCard = ({ service }: any) => {
         <div
           className={`w-[70px] h-[70px]  flex items-center justify-center rounded-full p-2 ${service.bgColor}`}
         >
-          {service.icon}
+          <service.icon className=' w-7 h-7'/>
         </div>
       </div>
 
