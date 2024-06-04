@@ -1,5 +1,8 @@
 import { BriefcaseIcon, ChartBarIcon,  } from "@heroicons/react/16/solid"
 import VisionMissionCard from "../ui/VisionMissionCard"
+import vision from '../../public/VisionIcon.png'
+import mission from '../../public/MissionIcon.png'
+import Image from "next/image"
 
 
 const VisionMission = () => {
@@ -8,12 +11,12 @@ const VisionMission = () => {
       <div className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           <VisionMissionCard
-            icon={<BriefcaseIcon className="w-12 h-12" />}
+            icon={<Image src={vision} alt="Vision" className="w-16 h-16" />}
             title="Vision"
             description="A Prosperous and Peaceful World, A future where the United Nations is more effective because more Rwandans are engaged global citizens, dedicated to achieving the purpose of the United Nation."
           />
           <VisionMissionCard
-            icon={<ChartBarIcon className="w-12 h-12" />}
+            icon={<Image src={mission} alt="Mission" className="w-16 h-16" />}
             title="Mission"
             description="Our mission is to actively champion and advocate for the aims and ideals set forth by the United Nations. Through our initiatives and collaborations, we aim to foster a global environment where cooperation, understanding, and sustainable development thrive"
           />
