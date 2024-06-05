@@ -68,10 +68,10 @@ export const ServicesSection = () => {
             <h2 className="font-bold tracking-wide text-[40px] mb-[15px]">
               Our Programs
             </h2>
-            <p className="my-0 text-[15px] text-[#646464] leading-7 mx-auto  max-w-[650px]">
+            {/* <p className="my-0 text-[15px] text-[#646464] leading-7 mx-auto  max-w-[650px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
           </div>
 
           <div className="mt-10">
