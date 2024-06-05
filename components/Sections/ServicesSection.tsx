@@ -65,13 +65,13 @@ export const ServicesSection = () => {
       <div className="py-12 bg-[#f6f3f3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mx-auto -mt-[5px] mb-[60px] max-w-[720px]">
-            <h2 className="font-bold tracking-wide text-[40px] mb-[15px]">
+            <h2 className="font-bold tracking-wide mb-[15px]  text-3xl">
               Our Programs
             </h2>
-            <p className="my-0 text-[15px] text-[#646464] leading-7 mx-auto  max-w-[650px]">
+            {/* <p className="my-0 text-[15px] text-[#646464] leading-7 mx-auto  max-w-[650px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
           </div>
 
           <div className="mt-10">
