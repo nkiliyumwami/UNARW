@@ -38,7 +38,8 @@ export const AboutSection = () => {
           <div className="flex-shrink-0 flex-grow-0 w-7/12 px-3">
             <div className="pl-[30px]">
               {/* <span className="uppercase mb-2 text-[#1273eb] leading-7 ">About us</span> */}
-              <h2 className="mb-[15px] text-[50px] font-bold">Who We are</h2>
+              <h2 className="mb-[15px] text-3xl font-bold">Who We are</h2>
+
               {/* <h4 className="text-[22px] mb-2 font-semibold">Our History</h4> */}
               <p className="leading-7 text-[15px] text-[#646464]">
                 The United Nations Association Rwanda (UNA-RW) is dedicated to
