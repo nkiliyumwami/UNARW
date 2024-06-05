@@ -79,6 +79,14 @@ const Navbar = () => {
             Our Programs
           </a>
           <a
+            href="/our-team"
+            className={`hover:text-[#4894DF] px-5 font-semibold ${
+              isActive('/our-team') ? 'text-[#4894DF]' : ''
+            }`}
+          >
+            Our Team
+          </a>
+          <a
             href="get-involved"
             className={`hover:text-[#4894DF] px-5 font-semibold ${
               isActive('/get-involved') ? 'text-[#4894DF]' : ''
@@ -134,6 +142,14 @@ const Navbar = () => {
             }`}
           >
             Our Programs
+          </a>
+          <a
+            href="/our-team"
+            className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
+              isActive('/our-team') ? 'text-[#4894DF]' : ''
+              }`}
+          >
+            Our Team
           </a>
           <a
             href="/get-involved"

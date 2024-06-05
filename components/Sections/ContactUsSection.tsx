@@ -89,7 +89,7 @@ const ContactUsSection = () => {
                 <PhoneIcon className="h-5 w-5 mr-2" /> +250 788 832 640
               </li>
               <li className="flex items-center text-gray-600">
-                <FiMail className="h-5 w-5 mr-2" /> info@anchoreco.com
+                <FiMail className="h-5 w-5 mr-2" /> clarisse@unarwanda.org
               </li>
             </ul>
           </div>
