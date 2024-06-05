@@ -39,7 +39,7 @@ const GetInvolved = () => {
         <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center w-full h-full relative z-10 ">
-              <h1 className="text-4xl pt-3 font-extrabold text-center mb-8">
+              <h1 className="pt-3 text-center mb-8 font-bold tracking-wide  text-3xl">
                 Get Involved
               </h1>
               <p className="text-center mb-12 ">
@@ -59,15 +59,16 @@ const GetInvolved = () => {
                   <p className="text-gray-600 text-center mb-4">
                     {option.description}
                   </p>
-                  {option.title==='Donate' || option.title=== 'Volunteer'?
+                  {option.title === 'Donate' || option.title === 'Volunteer' ? (
                     <a
                       href={option.link}
                       className="text-indigo-600 hover:text-indigo-500 font-medium"
                     >
                       Learn More
-                    </a>:<EmailSubscriptionPopup option={option.link} />
-                  }
-                  
+                    </a>
+                  ) : (
+                    <EmailSubscriptionPopup option={option.link} />
+                  )}
                 </div>
               ))}
             </div>

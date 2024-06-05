@@ -20,7 +20,7 @@ const teamMembers = [
   },
   {
     name: 'Potel Jossam',
-    title: 'Vice Producer',
+    title: 'Vice President',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: Jane,
     email: '',
@@ -86,7 +86,7 @@ const teamMembers = [
     name: 'Jane Kabera',
     title: 'Director of Programs',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: Jane,
     email: 'emily@example.com',
     phone: '+123 456 7890',
   },
@@ -118,9 +118,9 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <section className="py-12">
+    <section className="py-12 bg-[#f6f3f3]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-8">
+        <h2 className="text-3xl tracking-wide text-gray-900 text-center mb-8 font-bold">
           Our Team
         </h2>
         <div className="flex flex-wrap -mx-4">
