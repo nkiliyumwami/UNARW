@@ -17,13 +17,18 @@ const HeroSection = () => {
             UNA RWANDA
           </h1>
           <p className="mb-[15px] text-center leading-[29px] px-3">
-            Empowering Change, Uniting Humanity: Together, we champion the
-            Sustainable Development Goals, foster diversity, equity, and
-            inclusion, and pave the path towards a peaceful, prosperous
+            Empowering Change, Uniting Humanity: The United Nations Association
+            Rwanda (UNA-RW) champions the Sustainable Development Goals and
+            promotes diversity, equity, and inclusion to create a peaceful and
+            prosperous future for all. Join us in our commitment to addressing
+            global challenges and building a brighter, more inclusive world for
+            current and future generations.
           </p>
-          <a href="/get-involved"><button className="bg-[#4894DF] text-white px-6 py-3 my-[15px] mx-[20px] rounded-md capitalize">
-            Get Involved
-          </button></a>
+          <a href="/get-involved">
+            <button className="bg-[#4894DF] text-white px-6 py-3 my-[15px] mx-[20px] rounded-md capitalize">
+              Get Involved
+            </button>
+          </a>
         </div>
       </div>
       <div className="absolute inset-x-0 bottom-0">
