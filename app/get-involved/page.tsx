@@ -39,7 +39,7 @@ const GetInvolved = () => {
         <div className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center w-full h-full relative z-10 ">
-              <h1 className="pt-3 text-center mb-8 font-bold tracking-wide  text-3xl">
+              <h1 className="pt-3 text-center mb-4 font-bold tracking-wide  text-3xl">
                 Get Involved
               </h1>
               <p className="text-center mb-12 ">
