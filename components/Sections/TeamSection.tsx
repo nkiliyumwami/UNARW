@@ -120,10 +120,10 @@ const OurTeam = () => {
   return (
     <section className="py-12 bg-[#f6f3f3]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl tracking-wide text-gray-900 text-center mb-8 font-bold">
+        <h2 className="text-3xl tracking-wide text-center mb-4 font-bold">
           Our Team
         </h2>
-        <div className="flex flex-wrap -mx-4">
+        <div className="flex flex-wrap -mx-4 mt-10">
           {teamMembers.map((member, index) => (
             <div
               key={index}
