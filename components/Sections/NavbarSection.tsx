@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../../public/unarwanda16X16.png'
+import unLogo from '../../public/un-logo.png'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
 import { useRouter,usePathname } from 'next/navigation'
 
@@ -35,12 +36,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-20 transition-colors duration-300 pt-[15px] text-[16px] ${
+      className={`fixed w-full z-20 transition-colors duration-300 pt-[15px] ${
         isScrolled
           ? 'bg-white shadow-md text-black'
           : 'bg-transparent text-white'
       }`}
     >
+    
       <div className=" mx-auto py-2 px-3 md:px-24 flex items-center justify-between">
         <div className="flex items-center">
           <Link className="flex-shrink-0" href="/">
@@ -53,10 +55,10 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="hidden md:flex space-x-8 flex-grow ml-20 justify-end items-center ">
+        <div className="hidden md:flex space-x-8 flex-grow justify-center items-center ">
           <a
             href="/"
-            className={`hover:text-[#4894DF] px-5 font-semibold ${
+            className={`hover:text-[#4894DF] px-2 font-semibold ${
               isActive('/') ? 'text-[#4894DF]' : ''
             }`}
           >
@@ -64,7 +66,7 @@ const Navbar = () => {
           </a>
           <a
             href="/about-us"
-            className={`hover:text-[#4894DF] px-5 font-semibold ${
+            className={`hover:text-[#4894DF] px-2 font-semibold ${
               isActive('/about-us') ? 'text-[#4894DF]' : ''
             }`}
           >
@@ -72,7 +74,7 @@ const Navbar = () => {
           </a>
           <a
             href="/our-programs"
-            className={`hover:text-[#4894DF] px-5 font-semibold ${
+            className={`hover:text-[#4894DF] px-2 font-semibold ${
               isActive('/our-programs') ? 'text-[#4894DF]' : ''
             }`}
           >
@@ -80,7 +82,7 @@ const Navbar = () => {
           </a>
           <a
             href="/our-team"
-            className={`hover:text-[#4894DF] px-5 font-semibold ${
+            className={`hover:text-[#4894DF] px-2 font-semibold ${
               isActive('/our-team') ? 'text-[#4894DF]' : ''
             }`}
           >
@@ -88,20 +90,28 @@ const Navbar = () => {
           </a>
           <a
             href="get-involved"
-            className={`hover:text-[#4894DF] px-5 font-semibold ${
+            className={`hover:text-[#4894DF] px-2 font-semibold ${
               isActive('/get-involved') ? 'text-[#4894DF]' : ''
             }`}
           >
             Get Involved
           </a>
-          <button
-            className="bg-gradient-to-r from-purple-400 to-[#4894DF] text-white px-4 py-2 rounded-full"
-            onClick={() => {
-              navigate.push('/')
-            }}
+          <a
+            href="/"
+            className={`hover:text-[#4894DF] px-2 font-semibold ${
+              isActive('') ? 'text-[#4894DF]' : ''
+            }`}
           >
-            Contact Us
-          </button>
+            contact us
+          </a>
+          <a
+            href="/"
+            className={`hover:text-[#4894DF] px-2 font-semibold ${
+              isActive('') ? 'text-[#4894DF]' : ''
+            }`}
+          >
+            Donate
+          </a>
         </div>
         <div className="md:hidden flex items-center z-20">
           <button onClick={toggleMenu}>
@@ -115,6 +125,17 @@ const Navbar = () => {
               />
             )}
           </button>
+        </div>
+        <div className="flex items-center">
+          <Link className="flex-shrink-0" href="/">
+            <Image
+              width={130}
+              height={50}
+              className={`md:w-[160px] w-[80px]`}
+              src={unLogo}
+              alt="UNA Rwanda"
+            />
+          </Link>
         </div>
       </div>
       {isOpen && (
@@ -147,7 +168,7 @@ const Navbar = () => {
             href="/our-team"
             className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
               isActive('/our-team') ? 'text-[#4894DF]' : ''
-              }`}
+            }`}
           >
             Our Team
           </a>
