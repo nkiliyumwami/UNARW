@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import WFUNA from '../../public/wfna-logo.png'
-import WFUNANew from '../../public/wfuna_new.jpg'
+import WFUNANew from '../../public/un-logo.png'
 import SDGs from '../../public/SDGs.png'
 import VisionMission from './VisionMission'
 
@@ -11,28 +10,21 @@ export const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-center items-center">
           <div className="flex-shrink-0 flex-grow-0 w-5/12 px-3">
-            <div className="flex">
+            <div className="flex justify-center">
               <Image
                 src={WFUNANew.src}
-                width={400}
+                width={200}
                 height={50}
                 alt="UNA-RWANDA"
-                className="w-full"
+                className=""
               />
-              {/* <Image
-                src={UNARW.src}
-                width={100}
-                height={80}
-                alt="UNA-RWANDA"
-                className="w-full"
-              /> */}
             </div>
             <Image
               src={SDGs.src}
               width={400}
               height={80}
               alt="UNA-RWANDA"
-              className="w-full"
+              className="w-full -mt-3"
             />
           </div>
           <div className="flex-shrink-0 flex-grow-0 w-7/12 px-3">
