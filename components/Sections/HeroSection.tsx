@@ -1,22 +1,25 @@
-import bgImage from '../../public/unaRwanda.webp'
-import curve from '../../public/curve-shape.png'
+import bgImage from '../../public/unHome.png'
+import rwun from '../../public/unrw.jpg'
 import Image from 'next/image'
 
 
 const HeroSection = () => {
   return (
     <div
-      className="h-screen bg-center bg-cover bg-no-repeat"
-      style={{ backgroundImage: `url(${bgImage.src})` }}
+      className="h-screen"
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-0"></div>
-      <div className="text-white text-center mx-auto px-3 w-full lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] h-full relative z-10 flex items-center justify-center">
-        <div className="mt-[30px]">
-          <span>We are</span>
-          <h1 className="text-[50px] mb-[17px] mt-[12px] font-extrabold leading-[60px]">
-            UNA RWANDA
+      <div
+        className="py-32 h-[256px] bg-center bg-cover bg-no-repeat relative"
+        style={{ backgroundImage: `url(${bgImage.src})` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+      </div>
+      <div className=" mx-auto py-5 px-8 md:px-24 flex items-center justify-between">
+        <div className="my-[20px] mx-auto w-[60%] items-center px-3 flex justify-center flex-col">
+          <h1 className="text-3xl mb-[17px] mt-[12px] font-extrabold leading-[60px] text-[#4894DF]">
+            United Nations Association Rwanda
           </h1>
-          <p className="mb-[15px] text-center leading-[29px] px-3">
+          <p className="mb-[15px] leading-[29px] text-balance text-center">
             Empowering Change, Uniting Humanity: The United Nations Association
             Rwanda (UNA-RW) champions the Sustainable Development Goals and
             promotes diversity, equity, and inclusion to create a peaceful and
@@ -24,20 +27,34 @@ const HeroSection = () => {
             global challenges and building a brighter, more inclusive world for
             current and future generations.
           </p>
-          <a href="/get-involved">
-            <button className="bg-[#4894DF] text-white px-6 py-3 my-[15px] mx-[20px] rounded-md capitalize">
-              Get Involved
-            </button>
-          </a>
+          <div className="gap-5 flex">
+            <a href="/get-involved">
+              <button className="hover:bg-[#4894DF] hover:text-white px-6 py-3 my-[15px] rounded-md capitalize border border-[#4894DF]">
+                Get Involved
+              </button>
+            </a>
+            <a href="/get-involved">
+              <button className="hover:bg-[#4894DF] hover:text-white px-6 py-3 my-[15px] rounded-md capitalize border border-[#4894DF]">
+                Donate
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className="my-5 w-[40%] px-3">
+          <Image
+            src={rwun}
+            alt="imag"
+            width={900}
+            height={400}
+            className="h-auto align-middle rounded-md"
+          />
         </div>
       </div>
-      <div className="absolute inset-x-0 bottom-0">
-        <Image
-          src={curve}
-          alt="imag"
-          height={100}
-          className=" w-full h-auto text-transparent align-middle"
-        />
+      <div
+        className="mx-auto py-8 px-8 md:px-24 flex items-center justify-center text-white text-3xl bg-cover"
+        style={{ backgroundImage: `url(${bgImage.src})` }}
+      >
+        <p>Promoting the Aims and Ideals of the United Nations.</p>
       </div>
     </div>
   )

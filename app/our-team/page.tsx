@@ -1,8 +1,9 @@
 import OurTeam from '@/components/Sections/TeamSection'
 import React from 'react'
 import bgImage from '../../public/team.jpeg'
+import Team from '@/components/Sections/Team'
 
-const Team = () => {
+const TheTeam = () => {
   return (
     <div>
       <div
@@ -11,9 +12,9 @@ const Team = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
       </div>
-      <OurTeam />
+      <Team />
     </div>
   )
 }
 
-export default Team
+export default TheTeam
