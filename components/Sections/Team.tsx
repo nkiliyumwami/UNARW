@@ -4,6 +4,11 @@ import Profile from '../ui/Profile'
 import Jacky from '../../public/Jacky.jpg'
 import Clara from '../../public/teamClarisse.jpg'
 import Jane from '../../public/jane2.jpeg'
+import profile from '../../public/profile.png'
+import Yvonne from '../../public/yvonne.jpeg'
+import Kazigaba from '../../public/Kazigaba.jpeg'
+import Potel from '../../public/Potel.jpeg'
+import Mukamurenzi from '../../public/RWR-Mukamurenzi.jpg'
 
 const Team: React.FC = () => {
 const leaderShipTeam = [
@@ -39,7 +44,7 @@ const boardMembers = [
     name: 'Celine Mukamurenzi',
     role: 'President',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: Mukamurenzi,
     email: 'president@gmail.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -47,7 +52,7 @@ const boardMembers = [
     name: 'Potel Jossam',
     role: 'Vice President',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Jane,
+    image: Potel,
     email: 'vicepresident@gmail.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -55,7 +60,7 @@ const boardMembers = [
     name: 'Marie Belise Isingizwe',
     role: 'Treasurer',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -63,7 +68,7 @@ const boardMembers = [
     name: 'Ngoga',
     role: 'Arbitration Committee',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -71,7 +76,7 @@ const boardMembers = [
     name: 'Jane  Uwera',
     role: 'Arbitration Committee',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -79,7 +84,7 @@ const boardMembers = [
     name: 'Rose Mutesi ',
     role: 'Arbitration Committee',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -87,7 +92,7 @@ const boardMembers = [
     name: 'Assiimwe Murebwayire ',
     role: 'Gender Coordinator',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: Yvonne,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -95,7 +100,7 @@ const boardMembers = [
     name: 'Elloy KAZIGABA',
     role: 'Youth Coordinator',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: Kazigaba,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -103,7 +108,7 @@ const boardMembers = [
     name: 'Sylvain',
     role: 'Audit committee',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -111,7 +116,7 @@ const boardMembers = [
     name: 'Peter KATANISA',
     role: 'Audit committee',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -119,7 +124,7 @@ const boardMembers = [
     name: 'Jeanine Uwimana',
     role: 'Audit committee',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: Clara,
+    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },

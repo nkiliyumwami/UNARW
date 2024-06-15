@@ -38,7 +38,9 @@ const ContactUsSection = () => {
             </div>
           </div>
           <div className="w-full md:w-1/4 px-4 mb-8">
-            <h3 className="text-lg font-semibold mb-4">Explore</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-600">
+              Explore
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a href="/" className="text-gray-600 hover:text-gray-800">
@@ -61,14 +63,29 @@ const ContactUsSection = () => {
                   Our Programs
                 </a>
               </li>
+              <li>
+                <a
+                  href="/our-programs"
+                  className="text-gray-600 hover:text-gray-800"
+                >
+                  Our Team
+                </a>
+              </li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 px-4 mb-8">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-600">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a href="/" className="text-gray-600 hover:text-gray-800">
                   Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="/" className="text-gray-600 hover:text-gray-800">
+                  Donate
                 </a>
               </li>
               <li>
@@ -79,7 +96,9 @@ const ContactUsSection = () => {
             </ul>
           </div>
           <div className="w-full md:w-1/4 px-4 mb-8">
-            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-600">
+              Get in Touch
+            </h3>
             <ul className="space-y-2">
               <li className="flex items-center text-gray-600">
                 <HiLocationMarker size={20} className="h-5 w-5 mr-2" /> KN 72
