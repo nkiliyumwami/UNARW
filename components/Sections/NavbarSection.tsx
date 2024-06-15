@@ -102,7 +102,7 @@ const Navbar = () => {
               isActive('') ? 'text-[#4894DF]' : ''
             }`}
           >
-            contact us
+            Contact us
           </a>
           <a
             href="/"
