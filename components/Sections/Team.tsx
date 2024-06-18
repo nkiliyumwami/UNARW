@@ -1,4 +1,5 @@
 
+'use client'
 import React from 'react'
 import Profile from '../ui/Profile'
 import Jacky from '../../public/Jacky.jpg'
@@ -11,6 +12,7 @@ import Potel from '../../public/Potel.jpeg'
 import Mukamurenzi from '../../public/RWR-Mukamurenzi.jpg'
 
 const Team: React.FC = () => {
+  const [showBoardMembers, setShowBoardMembers] = React.useState(false)
 const leaderShipTeam = [
   {
     name: 'Clarisse Ingabire ',
@@ -65,14 +67,6 @@ const boardMembers = [
     linkedin: 'https://www.linkedin.com/in/',
   },
   {
-    name: 'Ngoga',
-    role: 'Arbitration Committee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: profile,
-    email: 'emily@example.com',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-  {
     name: 'Jane  Uwera',
     role: 'Arbitration Committee',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -101,14 +95,6 @@ const boardMembers = [
     role: 'Youth Coordinator',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: Kazigaba,
-    email: 'emily@example.com',
-    linkedin: 'https://www.linkedin.com/in/',
-  },
-  {
-    name: 'Sylvain',
-    role: 'Audit committee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
   },
@@ -149,20 +135,46 @@ const boardMembers = [
           linkedin={member.linkedin}
         />
       ))}
-      <h3 className="text-[1.5rem] font-light tracking-[0.3px] leading-[1.22] my-5">
+      <h3
+        className="text-[1.5rem] font-light tracking-[0.3px] leading-[1.22] my-5"
+        onClick={() => {
+          setShowBoardMembers(!showBoardMembers)
+        }}
+      >
         Board Members
       </h3>
-      {boardMembers.map((member, index) => (
-        <Profile
-          key={index}
-          name={member.name}
-          role={member.role}
-          image={member.image}
-          description={member.description}
-          email={member.email}
-          linkedin={member.linkedin}
-        />
-      ))}
+      {showBoardMembers ? (
+        <>
+          {boardMembers.map((member, index) => (
+            <Profile
+              key={index}
+              name={member.name}
+              role={member.role}
+              image={member.image}
+              description={member.description}
+              email={member.email}
+              linkedin={member.linkedin}
+            />
+          ))}
+          <h4
+            className="text-[#4894DF] underline pt-3"
+            onClick={() => {
+              setShowBoardMembers(!showBoardMembers)
+            }}
+          >
+            Hide Board Members
+          </h4>
+        </>
+      ) : (
+        <h4
+          className="text-[#4894DF] underline"
+          onClick={() => {
+            setShowBoardMembers(!showBoardMembers)
+          }}
+        >
+          Click to see Board Members
+        </h4>
+      )}
     </div>
   )
 }
