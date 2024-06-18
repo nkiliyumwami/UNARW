@@ -17,7 +17,7 @@ const leaderShipTeam = [
   {
     name: 'Clarisse Ingabire ',
     role: 'Executive Secretary	',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: Clara,
     email: 'clarisse@unarwanda.org',
     linkedin: 'https://www.linkedin.com/in/ingabire-clarisse-47a9ba77/',
@@ -25,7 +25,7 @@ const leaderShipTeam = [
   {
     name: 'Jane Kabera',
     role: 'Director of Programs',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: Jane,
     email: 'jane@anchoreco.com',
     linkedin: 'https://www.linkedin.com/in/jane-kabera-3b50b328b',
@@ -45,7 +45,7 @@ const boardMembers = [
   {
     name: 'Celine Mukamurenzi',
     role: 'President',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: Mukamurenzi,
     email: 'president@gmail.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -53,7 +53,7 @@ const boardMembers = [
   {
     name: 'Potel Jossam',
     role: 'Vice President',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: Potel,
     email: 'vicepresident@gmail.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -61,7 +61,7 @@ const boardMembers = [
   {
     name: 'Marie Belise Isingizwe',
     role: 'Treasurer',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -69,7 +69,7 @@ const boardMembers = [
   {
     name: 'Jane  Uwera',
     role: 'Arbitration Committee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -77,7 +77,7 @@ const boardMembers = [
   {
     name: 'Rose Mutesi ',
     role: 'Arbitration Committee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -85,7 +85,7 @@ const boardMembers = [
   {
     name: 'Assiimwe Murebwayire ',
     role: 'Gender Coordinator',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: Yvonne,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -93,7 +93,7 @@ const boardMembers = [
   {
     name: 'Elloy KAZIGABA',
     role: 'Youth Coordinator',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: Kazigaba,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -101,7 +101,7 @@ const boardMembers = [
   {
     name: 'Peter KATANISA',
     role: 'Audit committee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',
@@ -109,7 +109,7 @@ const boardMembers = [
   {
     name: 'Jeanine Uwimana',
     role: 'Audit committee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: '',
     image: profile,
     email: 'emily@example.com',
     linkedin: 'https://www.linkedin.com/in/',

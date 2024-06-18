@@ -6,11 +6,11 @@ import VisionMission from './VisionMission'
 
 export const AboutSection = () => {
   return (
-    <div className="sm:py-32 pt-40 pb-20">
-      <div className="container mx-auto px-4 ">
-        <div className="sm:flex justify-center items-center xs:flex-col">
+    <div className="md:py-32 py-10">
+      <div className="container md:mx-auto px-10 md:px-4 ">
+        <div className="md:flex-row justify-center w-full flex items-center flex-col">
           <div className="flex-shrink-0 flex-grow-0 md:w-5/12 px-3">
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <Image
                 src={WFUNANew.src}
                 width={200}
@@ -18,7 +18,7 @@ export const AboutSection = () => {
                 alt="UNA-RWANDA"
                 className=""
               />
-            </div>
+            </div> */}
             <Image
               src={SDGs.src}
               width={400}
@@ -27,7 +27,7 @@ export const AboutSection = () => {
               className="w-full -mt-3"
             />
           </div>
-          <div className="flex-shrink-0 flex-grow-0 md:w-7/12 px-3">
+          <div className=" md:w-7/12 px-3">
             <div className="pl-[30px]">
               {/* <span className="uppercase mb-2 text-[#1273eb] leading-7 ">About us</span> */}
               <h2 className="mb-4 tracking-wide text-3xl font-bold">
@@ -40,15 +40,16 @@ export const AboutSection = () => {
                 transformative change, focusing on achieving the Sustainable
                 Development Goals (SDGs), with an emphasis on eradicating
                 poverty, fostering peace, addressing climate change, and
-                protecting the environment. They promote diversity, equity, and
+                protecting the environment. We promote diversity, equity, and
                 inclusion, striving for a world where everyone thrives and
-                contributes to a brighter future. UNA-RW offers programs in
-                knowledge dissemination, human rights promotion, and peace and
-                conflict resolution. They are part of a global network of UNAs,
-                coordinated by the World Federation of United Nations
-                Associations (WFUNA), active in over 100 countries. Join them in
-                building a more inclusive and prosperous world for current and
-                future generations.
+                contributes to a brighter future. <br />
+                <br />
+                UNA-RW offers programs in knowledge dissemination, human rights
+                promotion, peace and conflict resolution. We are part of a
+                global network of UNAs, coordinated by the World Federation of
+                United Nations Associations (WFUNA), active in over 100
+                countries. Join us in building a more inclusive and prosperous
+                world for current and future generations.
               </p>
             </div>
           </div>
