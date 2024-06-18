@@ -40,7 +40,7 @@ const Profile: React.FC<ProfileProps> = ({
   const briefDescription = getFirstTwoSentences(description)
 
   return (
-    <div className="flex items-start space-x-4 py-4 border-b w-auto border-gray-300">
+    <div className="md:flex-row flex-col flex  items-start space-x-4 py-4 border-b w-auto border-gray-300">
       <Image
         src={image}
         alt={name}
