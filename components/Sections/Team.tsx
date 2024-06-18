@@ -117,11 +117,11 @@ const boardMembers = [
 ]
 
   return (
-    <div className="container mx-auto px-28 py-8">
+    <div className="container mx-auto md:px-28 px-6 py-8">
       <h2 className="text-3xl tracking-wide text-center mb-4 font-bold">
         Our Team
       </h2>
-      <h3 className="text-[1.5rem] font-light tracking-[0.3px] leading-[1.22] mb-5">
+      <h3 className="text-[1.5rem] font-light tracking-[0.3px] leading-[1.22] mb-5r">
         Leadership Team
       </h3>
       {leaderShipTeam.map((member, index) => (
