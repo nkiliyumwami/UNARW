@@ -7,7 +7,7 @@ import VisionMission from './VisionMission'
 export const AboutSection = () => {
   return (
     <div className="md:py-32 py-10">
-      <div className="container md:mx-auto px-10 md:px-4 ">
+      <div className="w-full md:mx-auto px-10 md:px-24 ">
         <div className="md:flex-row justify-center w-full flex items-center flex-col">
           <div className="flex-shrink-0 flex-grow-0 md:w-5/12 px-3">
             {/* <div className="flex justify-center">
@@ -28,9 +28,9 @@ export const AboutSection = () => {
             />
           </div>
           <div className=" md:w-7/12 px-3">
-            <div className="pl-[30px]">
+            <div className="md:pl-[30px]">
               {/* <span className="uppercase mb-2 text-[#1273eb] leading-7 ">About us</span> */}
-              <h2 className="mb-4 tracking-wide text-3xl font-bold">
+              <h2 className="mb-4 tracking-wide md:text-3xl text-2xl font-bold">
                 Who We are
               </h2>
 
