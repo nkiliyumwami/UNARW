@@ -14,7 +14,7 @@ const HeroSection = () => {
       </div>
       <div className=" mx-auto py-5 px-8 md:px-24 md:flex items-center justify-between ">
         <div className="my-[20px] md:mx-auto lg:w-[60%] w-full items-center px-3 flex justify-center flex-col">
-          <h1 className="md:text-3xl text-lg mb-[17px] md:mt-[12px] font-extrabold md:leading-[60px] text-[#4894DF]">
+          <h1 className="md:text-3xl sm:text-2xl xs:text-lg mb-[17px] md:mt-[12px] font-extrabold md:leading-[60px] text-[#4894DF]">
             United Nations Association Rwanda
           </h1>
           <p className="mb-[15px] leading-[29px] md:text-balance md:text-center">

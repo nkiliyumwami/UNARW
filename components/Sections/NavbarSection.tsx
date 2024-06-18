@@ -137,7 +137,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="lg:hidden bg-white text-black">
+        <div className="lg:hidden bg-white text-black items-center flex flex-col justify-center md:text-2xl text-lg">
           <a
             href="/"
             className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
