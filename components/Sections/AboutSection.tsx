@@ -6,10 +6,10 @@ import VisionMission from './VisionMission'
 
 export const AboutSection = () => {
   return (
-    <div className="py-32">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-center items-center">
-          <div className="flex-shrink-0 flex-grow-0 w-5/12 px-3">
+    <div className="sm:py-32 pt-40 pb-20">
+      <div className="container mx-auto px-4 ">
+        <div className="sm:flex justify-center items-center xs:flex-col">
+          <div className="flex-shrink-0 flex-grow-0 md:w-5/12 px-3">
             <div className="flex justify-center">
               <Image
                 src={WFUNANew.src}
@@ -27,7 +27,7 @@ export const AboutSection = () => {
               className="w-full -mt-3"
             />
           </div>
-          <div className="flex-shrink-0 flex-grow-0 w-7/12 px-3">
+          <div className="flex-shrink-0 flex-grow-0 md:w-7/12 px-3">
             <div className="pl-[30px]">
               {/* <span className="uppercase mb-2 text-[#1273eb] leading-7 ">About us</span> */}
               <h2 className="mb-4 tracking-wide text-3xl font-bold">

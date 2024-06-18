@@ -42,8 +42,7 @@ const Navbar = () => {
           : 'bg-transparent text-white'
       }`}
     >
-    
-      <div className=" mx-auto py-2 px-3 md:px-24 flex items-center justify-between">
+      <div className=" mx-auto md:py-2 py-6 px-8 md:px-24 flex items-center justify-between">
         <div className="flex items-center">
           <Link className="flex-shrink-0" href="/">
             <Image
@@ -55,7 +54,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="hidden md:flex space-x-8 flex-grow justify-center items-center ">
+        <div className="hidden lg:flex space-x-8 flex-grow justify-center items-center ">
           <a
             href="/"
             className={`hover:text-[#4894DF] px-2 font-semibold ${
@@ -113,7 +112,7 @@ const Navbar = () => {
             Donate
           </a>
         </div>
-        <div className="md:hidden flex items-center z-20">
+        <div className="lg:hidden flex items-center z-20">
           <button onClick={toggleMenu}>
             {isOpen ? (
               <XMarkIcon
@@ -126,7 +125,7 @@ const Navbar = () => {
             )}
           </button>
         </div>
-        <div className="flex items-center">
+        <div className="hidden lg:flex items-center">
           <Link className="flex-shrink-0" href="/">
             <Image
               width={130}
@@ -180,14 +179,22 @@ const Navbar = () => {
           >
             Get Involved
           </a>
-          <button
-            onClick={() => {
-              navigate.push('/')
-            }}
-            className="block w-full text-left px-4 py-2 bg-gradient-to-r from-purple-400 to-[#4894DF] text-white rounded-md"
+          <a
+            href="/"
+            className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
+              isActive('#') ? 'text-[#4894DF]' : ''
+            }`}
           >
             Contact Us
-          </button>
+          </a>
+          <a
+            href="/"
+            className={`block px-4 py-2 hover:text-[#4894DF] font-semibold ${
+              isActive('#') ? 'text-[#4894DF]' : ''
+            }`}
+          >
+            Donate
+          </a>
         </div>
       )}
     </nav>
