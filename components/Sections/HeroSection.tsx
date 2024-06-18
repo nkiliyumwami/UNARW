@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const HeroSection = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       <div
         className="py-32 h-[256px] bg-center bg-cover bg-no-repeat relative"
         style={{ backgroundImage: `url(${bgImage.src})` }}

@@ -5,13 +5,12 @@ import Link from 'next/link'
 import logo from '../../public/unarwanda16X16.png'
 import unLogo from '../../public/un-logo.png'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
-import { useRouter,usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const navigate = useRouter()
   const pathname = usePathname()
   const isActive = (href: string) => {
     return pathname === href
@@ -130,7 +129,7 @@ const Navbar = () => {
             <Image
               width={130}
               height={50}
-              className={`md:w-[160px] w-[80px]`}
+              className={`md:w-[160px] w-[80px] p-3`}
               src={unLogo}
               alt="UNA Rwanda"
             />
