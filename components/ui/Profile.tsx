@@ -49,9 +49,10 @@ const Profile: React.FC<ProfileProps> = ({
       <div className="flex-1">
         <h2 className="text-xl font-bold">{name}</h2>
         <p className="text-gray-500 mb-2">{role}</p>
-        <p className="text-gray-700">
+        {description===''?'':(<p className="text-gray-700">
           {showMore ? description : briefDescription}
-        </p>
+        </p>)}
+        
         <p className="mt-2 text-gray-600">
           If you would like to contact {name.split(' ')[0]} directly, email{' '}
           <a
