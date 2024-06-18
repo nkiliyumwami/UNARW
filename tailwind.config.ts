@@ -8,18 +8,11 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: '576px',
-      // => @media (min-width: 576px) { ... }
-
-      md: '768px',
-      // => @media (min-width: 768px) { ... }
-
-      lg: '992px',
-      // => @media (min-width: 992px) { ... }
-      xl: '1200px',
-      // => @media (min-width: 1200px) { ... },
-      '2xl': '1400px',
-      // => @media (min-width: 1400px) { ... }
+      xs: { max: '425px' },
+      sm: { min: '426px' },
+      md: { min: '769px' },
+      lg: { min: '1440px' },
+      xl: { min: '2560px' },
     },
     extend: {
       backgroundImage: {

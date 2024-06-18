@@ -5,21 +5,19 @@ import Image from 'next/image'
 
 const HeroSection = () => {
   return (
-    <div
-      className="h-screen"
-    >
+    <div className="h-screen">
       <div
         className="py-32 h-[256px] bg-center bg-cover bg-no-repeat relative"
         style={{ backgroundImage: `url(${bgImage.src})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
       </div>
-      <div className=" mx-auto py-5 px-8 md:px-24 flex items-center justify-between">
-        <div className="my-[20px] mx-auto w-[60%] items-center px-3 flex justify-center flex-col">
-          <h1 className="text-3xl mb-[17px] mt-[12px] font-extrabold leading-[60px] text-[#4894DF]">
+      <div className=" mx-auto py-5 px-8 md:px-24 md:flex items-center justify-between ">
+        <div className="my-[20px] md:mx-auto lg:w-[60%] w-full items-center px-3 flex justify-center flex-col">
+          <h1 className="md:text-3xl text-lg mb-[17px] md:mt-[12px] font-extrabold md:leading-[60px] text-[#4894DF]">
             United Nations Association Rwanda
           </h1>
-          <p className="mb-[15px] leading-[29px] text-balance text-center">
+          <p className="mb-[15px] leading-[29px] md:text-balance md:text-center">
             Empowering Change, Uniting Humanity: The United Nations Association
             Rwanda (UNA-RW) champions the Sustainable Development Goals and
             promotes diversity, equity, and inclusion to create a peaceful and
@@ -33,14 +31,14 @@ const HeroSection = () => {
                 Get Involved
               </button>
             </a>
-            <a href="/get-involved">
+            {/* <a href="/get-involved">
               <button className="hover:bg-[#4894DF] hover:text-white px-6 py-3 my-[15px] rounded-md capitalize border border-[#4894DF]">
                 Donate
               </button>
-            </a>
+            </a> */}
           </div>
         </div>
-        <div className="my-5 w-[40%] px-3">
+        <div className="my-5 w-[40%] px-3 hidden lg:flex">
           <Image
             src={rwun}
             alt="imag"
@@ -51,10 +49,11 @@ const HeroSection = () => {
         </div>
       </div>
       <div
-        className="mx-auto py-8 px-8 md:px-24 flex items-center justify-center text-white text-3xl bg-cover"
+        className=" relative mx-auto py-8 px-8 md:px-24 flex items-center justify-center text-white md:text-3xl text-lg bg-cover"
         style={{ backgroundImage: `url(${bgImage.src})` }}
       >
-        <p>Promoting the Aims and Ideals of the United Nations.</p>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <p className='z-20 text-center'>Promoting the Aims and Ideals of the United Nations.</p>
       </div>
     </div>
   )
