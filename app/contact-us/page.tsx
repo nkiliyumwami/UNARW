@@ -1,28 +1,19 @@
-import { ExclamationCircleIcon } from '@heroicons/react/16/solid'
-import Link from 'next/link'
 import React from 'react'
+import bgImage from '../../public/contact-us.webp'
+import GetInTouch from '@/components/ui/GetinTouch'
 
-const page = () => {
+const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
-      <div className="bg-white p-8 rounded-lg shadow-md text-center">
-        <ExclamationCircleIcon className="h-16 w-16 text-yellow-500 mx-auto mb-4" />
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">
-          Under Maintenance
-        </h1>
-        <p className="text-gray-600 mb-4">
-          We&apos;re currently performing some scheduled maintenance.
-        </p>
-        <p className="text-gray-600 mb-4">Please check back later.</p>
-        <a
-          href="/"
-          className="text-indigo-600 hover:text-indigo-500 font-medium"
-        >
-          Go back to Homepage
-        </a>
+    <div className="">
+      <div
+        className="py-32 h-[256px] bg-center bg-cover bg-no-repeat relative"
+        style={{ backgroundImage: `url(${bgImage.src})` }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-0"></div>
       </div>
+      <GetInTouch/>
     </div>
   )
 }
 
-export default page
+export default Contact
