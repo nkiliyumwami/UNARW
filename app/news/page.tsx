@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Blog, { IBlog } from '../../lib/models/Blog'
 
-interface Blog{
+export interface Blog{
   _id: string
   title: string
   description: string
