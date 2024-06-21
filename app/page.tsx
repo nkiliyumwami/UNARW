@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/Sections/AboutSection";
 import GetInvolvedSection from "@/components/Sections/GetInvolved";
 import HeroSection from "@/components/Sections/HeroSection";
 import { ServicesSection } from "@/components/Sections/ServicesSection";
+import NewsEvents from "@/components/ui/News";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <NewsEvents/>
       {/* <GetInvolvedSection/> */}
     </main>
   );

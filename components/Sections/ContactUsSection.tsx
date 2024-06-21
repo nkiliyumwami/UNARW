@@ -65,7 +65,7 @@ const ContactUsSection = () => {
               </li>
               <li>
                 <a
-                  href="/our-programs"
+                  href="/our-team"
                   className="text-gray-600 hover:text-gray-800"
                 >
                   Our Team
@@ -79,7 +79,7 @@ const ContactUsSection = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-gray-600 hover:text-gray-800">
+                <a href="/contact-us" className="text-gray-600 hover:text-gray-800">
                   Contact Us
                 </a>
               </li>
