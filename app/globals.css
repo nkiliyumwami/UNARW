@@ -27,3 +27,34 @@ h2{
     color: #18181b;
     font-weight: bold;
 }
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  transition: .3s all ease;
+  opacity: 0;
+  border-radius: 8px;
+  /* visibility: hidden; */
+}
+
+.overlay:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide-up {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.slide-up.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+

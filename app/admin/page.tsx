@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { cloudinaryService } from '@/lib/cloudinary'
+import { cloudinaryService } from '@/lib/cloudinaryService'
 
 const Admin = () => {
   const [blogs, setBlogs] = useState([])
