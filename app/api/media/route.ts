@@ -1,5 +1,3 @@
-// app/api/media/route.ts
-
 import { NextRequest, NextResponse } from 'next/server'
 import cloudinary from '../../../lib/cloudinary'
 
@@ -19,16 +17,6 @@ export async function GET(req: NextRequest) {
       format: result.format,
     })
   )
-
-  // const blurImagePromises = reducedResults.map((image) =>
-  //   getBase64ImageUrl(image)
-  // )
-
-  // const imagesWithBlurDataUrls = await Promise.all(blurImagePromises)
-
-  // for (let i = 0; i < reducedResults.length; i++) {
-  //   reducedResults[i].blurDataUrl = imagesWithBlurDataUrls[i]
-  // }
 
   return NextResponse.json(reducedResults)
 }
