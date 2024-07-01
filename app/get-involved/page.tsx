@@ -1,22 +1,33 @@
+'use client'
+
 import { HeartIcon, UserIcon } from "@heroicons/react/16/solid"
 import { RiMailLine } from "react-icons/ri"
-import React from 'react'
+import React, { useState } from 'react'
 import bgImage from '../../public/getinvolved.jpeg'
 import EmailSubscriptionPopup from "@/components/ui/EmailSubscriptionPopup"
+import GetInvolvedForm from "@/components/forms/VolunteerForm"
 
 const GetInvolved = () => {
+  const [isOpen, setIsOpen] = useState(false)
+      const [type, setType] = useState<string>('')
+
+
+  const handleOpenPopup = (title:string) => {
+    setType(title)
+    setIsOpen(true)
+  }
   const involvementOptions = [
+    // {
+    //   title: 'Volunteer',
+    //   description:
+    //     'Join our team of volunteers and make a difference in your community.',
+    //   icon: UserIcon,
+    //   link: '#',
+    // },
     {
-      title: 'Volunteer',
-      description:
-        'Join our team of volunteers and make a difference in your community.',
+      title: 'Become one of us',
+      description: 'Support our mission by becoming one of us.',
       icon: UserIcon,
-      link: '#',
-    },
-    {
-      title: 'Donate',
-      description: 'Support our mission by making a donation.',
-      icon: HeartIcon,
       link: '#',
     },
     {
@@ -46,7 +57,7 @@ const GetInvolved = () => {
                 Explore different ways to get involved and support our mission.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex justify-center gap-8">
               {involvementOptions.map((option, index) => (
                 <div
                   key={index}
@@ -59,13 +70,16 @@ const GetInvolved = () => {
                   <p className="text-gray-600 text-center mb-4">
                     {option.description}
                   </p>
-                  {option.title === 'Donate' || option.title === 'Volunteer' ? (
-                    <a
-                      href={option.link}
+                  {option.title === 'Become one of us' ||
+                  option.title === 'Volunteer' ? (
+                    <button
+                      onClick={() => {
+                        handleOpenPopup(option.title)
+                      }}
                       className="text-indigo-600 hover:text-indigo-500 font-medium"
                     >
                       Learn More
-                    </a>
+                    </button>
                   ) : (
                     <EmailSubscriptionPopup option={option.link} />
                   )}
@@ -74,10 +88,12 @@ const GetInvolved = () => {
             </div>
           </div>
         </div>
-        {/* </div> */}
+        <GetInvolvedForm type={type} isOpen={isOpen} setIsOpen={setIsOpen} />
       </main>
     </div>
   )
 }
 
 export default GetInvolved
+
+
