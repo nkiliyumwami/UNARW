@@ -3,6 +3,13 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { cloudinaryService } from '@/lib/cloudinaryService'
+// import ReactQuill from 'react-quill'
+import 'react-quill/dist/quill.snow.css'
+import dynamic from 'next/dynamic'
+import 'react-quill/dist/quill.snow.css'
+
+// Dynamically import ReactQuill
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false })
 
 const Admin = () => {
   const [blogs, setBlogs] = useState([])
@@ -91,7 +98,7 @@ const Admin = () => {
   const handleDelete = async (id: string) => {
     if (confirm('Are you sure you want to delete this blog post?')) {
       try {
-        await axios.delete('/api/blogs', { data: { id } })
+        await axios.delete('/api/news', { data: { id } })
         fetchBlogs()
         alert('Blog post deleted successfully!')
       } catch (error) {
@@ -117,12 +124,20 @@ const Admin = () => {
         </div>
         <div>
           <label className="block text-sm font-medium">Description</label>
-          <textarea
+          {/* <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             className="mt-1 block w-full p-2 border rounded"
             required
-          ></textarea>
+          ></textarea> */}
+          {/* <ReactQuill
+            value={description}
+            onChange={(value) => setDescription(value)}
+          /> */}
+
+          {/* {isBrowser && ( */}
+            <ReactQuill value={description} onChange={setDescription} />
+          {/* )} */}
         </div>
         <div>
           <label className="block text-sm font-medium">Location</label>

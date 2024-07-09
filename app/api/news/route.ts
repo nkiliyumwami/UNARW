@@ -2,6 +2,7 @@ import dbConnect from '../../../lib/dbConnect'
 import { NextResponse } from 'next/server'
 import Blog from '../../../lib/models/Blog'
 
+export const maxDuration = 60
 
 export async function GET() {
   await dbConnect()
